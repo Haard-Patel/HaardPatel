@@ -208,13 +208,37 @@ function Footer() {
               </a>
 
               <a
-                href="mailto:haardp9@gmail.com"
-                aria-label="Email"
-              >
-                <span className="footer-email-mark">
-                  @
-                </span>
-              </a>
+  href="mailto:haardp9@gmail.com"
+  aria-label="Email"
+>
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    className="footer-brand-icon"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3 6.5C3 5.672 3.672 5 4.5 5h15c.828 0 1.5.672 1.5 1.5v11c0 .828-.672 1.5-1.5 1.5h-15C3.672 19 3 18.328 3 17.5v-11Z"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3.5 6.5 12 13l8.5-6.5"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3.5 17.5 9 12.8M20.5 17.5 15 12.8"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+    />
+  </svg>
+</a>
 
               <a
                 href="https://www.instagram.com/haard20_?stkn=MWFicm1sc3g1Z2MxZw%3D%3D&utm_source=qr"
