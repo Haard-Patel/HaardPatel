@@ -128,7 +128,7 @@ function Contact() {
               and learning from the work others are doing.
               If you’re building something, solving a problem, or simply want
               to connect?
-              <strong> I'd lve to connnect.</strong>
+              <strong> I'd love to connnect.</strong>
             </p>
 
             <div className="contact-email-block">
