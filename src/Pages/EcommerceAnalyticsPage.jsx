@@ -265,7 +265,7 @@ function EcommerceAnalyticsPage() {
 
               <div>
                 <span>GITHUB</span>
-                <strong>Coming Soon</strong>
+                <strong>https://github.com/Haard-Patel/CommerceIQ</strong>
               </div>
 
               <div>
