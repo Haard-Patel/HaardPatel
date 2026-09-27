@@ -258,26 +258,37 @@ function EcommerceAnalyticsPage() {
         </section>
 
         {/* Project Links */}
-        <section className="project-detail-links-section">
-          <div className="project-detail-container">
+        <section className="itsm-detail-links-section">
+          <div className="itsm-detail-container">
 
-            <div className="project-detail-links">
+            <div className="itsm-detail-links">
 
-              <div>
-                <span>GITHUB</span>
-                <strong>https://github.com/Haard-Patel/CommerceIQ</strong>
-              </div>
+              <a
+                href="https://github.com/Haard-Patel/CommerceIQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div>
+                  <span>GITHUB</span>
+                  <strong>View Repository ↗</strong>
+                </div>
+              </a>
 
-              <div>
-                <span>LIVE DEMO</span>
-                <strong>Coming Soon</strong>
-              </div>
+              <a
+                href="Coming Soon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div>
+                  <span>LIVE DEMO</span>
+                  <strong>Coming Soon...</strong>
+                </div>
+              </a>
 
             </div>
 
           </div>
         </section>
-
         {/* Previous / Next */}
         <section className="project-detail-navigation">
           <div className="project-detail-container">
