@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 
 import Navbar from "../components/Navbar/Navbar";
 import Cursor from "../components/Cursor/Cursor";
@@ -9,6 +9,15 @@ import Footer from "../components/Footer/Footer";
 import "./AddOnsPage.css";
 
 function AddOnsPage() {
+  /*
+   * Stores which certificate is currently open.
+   *
+   * null   = no certificate open
+   * "itil" = ITIL certificate open
+   * "claude" = Claude Code certificate open
+   */
+  const [openCertificateName, setOpenCertificateName] = useState(null);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -16,6 +25,40 @@ function AddOnsPage() {
       behavior: "instant",
     });
   }, []);
+
+  /*
+   * Lock page scrolling while the certificate lightbox is open.
+   * Also allows the Escape key to close it.
+   */
+  useEffect(() => {
+    if (!openCertificateName) {
+      document.body.style.overflow = "";
+      return undefined;
+    }
+
+    document.body.style.overflow = "hidden";
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setOpenCertificateName(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openCertificateName]);
+
+  const openCertificate = (certificateName) => {
+    setOpenCertificateName(certificateName);
+  };
+
+  const closeCertificate = () => {
+    setOpenCertificateName(null);
+  };
 
   return (
     <div className="addons-page">
@@ -58,14 +101,16 @@ function AddOnsPage() {
           <section className="addons-section">
             <div className="certification-list">
 
-              {/* 01 */}
+              {/* =====================================================
+                  01 — ITIL V4 FOUNDATION
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
                   01
                 </div>
 
                 <div className="certification-content">
-                  <h2>ITIL</h2>
+                  <h2>ITIL V4 Foundation (ITSM Fundamentals)</h2>
 
                   <span className="certification-status">
                     COMPLETED · UDEMY
@@ -76,10 +121,31 @@ function AddOnsPage() {
                     service management concepts, processes, and
                     IT service delivery practices.
                   </p>
+
+                  {/* ITIL CERTIFICATE THUMBNAIL */}
+                  <button
+                    type="button"
+                    className="certificate-thumbnail-button"
+                    onClick={() => openCertificate("itil")}
+                    aria-label="View ITIL certificate"
+                  >
+                    <img
+                      src="/images/Itil.jpeg"
+                      alt="ITIL certificate"
+                      className="certificate-thumbnail"
+                    />
+
+                    <span className="certificate-thumbnail-label">
+                      VIEW CERTIFICATE
+                    </span>
+                  </button>
                 </div>
               </article>
 
-              {/* 02 */}
+
+              {/* =====================================================
+                  02 — DIGITAL MARKETING
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
                   02
@@ -100,31 +166,87 @@ function AddOnsPage() {
                 </div>
               </article>
 
-              {/* 03 */}
+
+              {/* =====================================================
+                  03 — CLAUDE CODE
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
                   03
                 </div>
 
                 <div className="certification-content">
-                  <h2>Apple Certified IT Professional</h2>
+                  <h2>Claude Code</h2>
 
                   <span className="certification-status">
-                    CURRENTLY DOING · APPLE · ACIT
+                    COMPLETED · ANTHROPIC
                   </span>
 
                   <p>
-                    Currently completing Apple’s IT professional
-                    certification focused on technical support,
-                    troubleshooting, and Apple technology.
+                    Claude Code certification covering AI-assisted
+                    software development, coding workflows, and
+                    effective use of Claude Code for building and
+                    working with software projects.
                   </p>
+
+                  {/* CLAUDE CODE CERTIFICATE THUMBNAIL */}
+                  <button
+                    type="button"
+                    className="certificate-thumbnail-button"
+                    onClick={() => openCertificate("claude")}
+                    aria-label="View Claude Code certificate"
+                  >
+                    <img
+                      src="/images/ClaudeCode.jpeg"
+                      alt="Claude Code certificate"
+                      className="certificate-thumbnail"
+                    />
+
+                    <span className="certificate-thumbnail-label">
+                      VIEW CERTIFICATE
+                    </span>
+                  </button>
                 </div>
               </article>
 
-              {/* 04 */}
+
+              {/* =====================================================
+                  04 — AWS
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
                   04
+                </div>
+
+                <div className="certification-content">
+                  <h2>AWS Cloud Practitioner Essentials</h2>
+
+                  <span className="certification-status">
+                    CURRENTLY DOING · AWS
+                  </span>
+
+<p>
+  Building foundational AWS knowledge across cloud computing,
+  security, storage, networking, databases, and pricing,
+  with exposure to
+  <br />
+  Amazon EC2, S3, RDS, DynamoDB, VPC, Lambda,
+  CloudFront, Route 53, CloudWatch, IAM, Kinesis,
+  <br />
+  Elastic Beanstalk, Elastic Load Balancing, Auto Scaling,
+  and CloudFormation.
+</p>
+
+                </div>
+              </article>
+
+
+              {/* =====================================================
+                  05 — COMPTIA A+
+              ===================================================== */}
+              <article className="certification-item">
+                <div className="certification-number">
+                  05
                 </div>
 
                 <div className="certification-content">
@@ -143,10 +265,37 @@ function AddOnsPage() {
                 </div>
               </article>
 
-              {/* 05 */}
+
+              {/* =====================================================
+                  06 — APPLE
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
-                  05
+                  06
+                </div>
+
+                <div className="certification-content">
+                  <h2>Apple Certified IT Professional</h2>
+
+                  <span className="certification-status">
+                    CURRENTLY DOING · APPLE · ACIT
+                  </span>
+
+                  <p>
+                    Currently completing Apple’s IT professional
+                    certification focused on technical support,
+                    troubleshooting, and Apple technology.
+                  </p>
+                </div>
+              </article>
+
+
+              {/* =====================================================
+                  07 — TECHNICAL SUPPORT
+              ===================================================== */}
+              <article className="certification-item">
+                <div className="certification-number">
+                  07
                 </div>
 
                 <div className="certification-content">
@@ -164,10 +313,13 @@ function AddOnsPage() {
                 </div>
               </article>
 
-              {/* 06 */}
+
+              {/* =====================================================
+                  08 — ECBA
+              ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
-                  06
+                  08
                 </div>
 
                 <div className="certification-content">
@@ -190,6 +342,70 @@ function AddOnsPage() {
 
         </div>
       </main>
+
+
+      {/* =========================================================
+          CERTIFICATE LIGHTBOX
+          
+          Only ONE lightbox exists.
+          The image changes depending on which certificate
+          was clicked.
+      ========================================================= */}
+
+      {openCertificateName && (
+        <div
+          className="certificate-lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label={
+            openCertificateName === "itil"
+              ? "ITIL certificate preview"
+              : "Claude Code certificate preview"
+          }
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) {
+              closeCertificate();
+            }
+          }}
+        >
+          <div className="certificate-lightbox-content">
+
+            {/* CLOSE BUTTON */}
+            <button
+              type="button"
+              className="certificate-close"
+              onClick={closeCertificate}
+              aria-label="Close certificate preview"
+            >
+              <X
+                size={24}
+                strokeWidth={1.4}
+              />
+            </button>
+
+
+            {/* ITIL CERTIFICATE */}
+            {openCertificateName === "itil" && (
+              <img
+                src="/images/Itil.jpeg"
+                alt="ITIL certificate enlarged"
+                className="certificate-lightbox-image"
+              />
+            )}
+
+
+            {/* CLAUDE CODE CERTIFICATE */}
+            {openCertificateName === "claude" && (
+              <img
+                src="/images/ClaudeCode.jpeg"
+                alt="Claude Code certificate enlarged"
+                className="certificate-lightbox-image"
+              />
+            )}
+
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
