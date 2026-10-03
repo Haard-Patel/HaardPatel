@@ -19,6 +19,7 @@ import EcommerceAnalyticsPage from "./Pages/EcommerceAnalyticsPage";
 import ITServiceManagementPage from "./Pages/ITServiceManagementPage";
 import NutriTrackerPage from "./Pages/NutriTrackerPage";
 import AddOnsPage from "./Pages/AddOnsPage";
+import ReviewLensPage from "./Pages/ReviewLens";
 
 function HomePage() {
   const location = useLocation();
@@ -100,9 +101,13 @@ function App() {
   element={<AddOnsPage />}
 />
 
+<Route
+  path="/projects/reviewlens"
+  element={<ReviewLensPage />}
+/>
+
     </Routes>
-
-
+    
   );
 }
 

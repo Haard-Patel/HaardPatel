@@ -67,7 +67,7 @@ function EcommerceAnalyticsPage() {
 
             <div className="project-detail-intro">
               <p>
-                A full-stack platform turning e-commerce data into
+                A Full Stack Analytical platform turning e-commerce data into
                 clear analytics, business intelligence, and
                 eventually AI-assisted insights.
               </p>
@@ -95,20 +95,19 @@ function EcommerceAnalyticsPage() {
 
               <div className="project-detail-content">
                 <h2>
-                  Commerce data,
+                  E-Commerce data,
                   <br />
                   made <span>useful.</span>
                 </h2>
 
                 <p>
-                  A project exploring how software engineering,
-                  analytics, and AI can come together in one
-                  modern e-commerce intelligence platform.
+                  A project exploring how to transform rw e-commerce transction data into actionable business intelligence.
+                  Extracting, cleaning, validating, transforming, analysing and visualizing data to generate insights that can help businesses make better decisions through interactive analytical dashboard.
                 </p>
 
                 <p>
-                  The goal is simple: make patterns, trends,
-                  and business performance easier to understand.
+                  The goal is simple: revenue analysis, customer behviour, product performnce, make patterns, trends,
+                  and business performance easier to understand, eventully forecasting and anomaly detection.
                 </p>
               </div>
 
@@ -142,17 +141,16 @@ function EcommerceAnalyticsPage() {
                     <span>01</span>
                     <h3>Analytics</h3>
                     <p>
-                      Sales, products, customers, and performance
-                      presented through useful metrics.
+                      SQL-based sales, products, customers, and performance
+                      presented through useful metrics, and data investigation and visualization.
                     </p>
                   </div>
 
                   <div className="project-detail-feature">
                     <span>02</span>
-                    <h3>Visualization</h3>
+                    <h3>Data Engineering</h3>
                     <p>
-                      Interactive views that make complex data
-                      easier to explore.
+                    Multi-format data ingestion, ETL, validation, and PostgreSQL data modeling.
                     </p>
                   </div>
 
@@ -161,16 +159,15 @@ function EcommerceAnalyticsPage() {
                     <h3>AI / ML</h3>
                     <p>
                       Exploring intelligent ways to discover
-                      patterns and generate insights.
+                      patterns and generate insights on revenue forecasting, anomaly detection, and customer segmentation.
                     </p>
                   </div>
 
                   <div className="project-detail-feature">
                     <span>04</span>
-                    <h3>Full Stack</h3>
+                    <h3>Cloud</h3>
                     <p>
-                      A complete application connecting the
-                      interface, APIs, backend, and data.
+                    AWS-based data lake and analytics architecture using S3, Glue, Athena, RDS, IAM, and CloudWatch.
                     </p>
                   </div>
 
@@ -203,14 +200,14 @@ function EcommerceAnalyticsPage() {
                 </h2>
 
                 <div className="project-detail-stack">
-                  <span>REACT</span>
-                  <span>NODE.JS</span>
-                  <span>EXPRESS</span>
-                  <span>MONGODB</span>
-                  <span>REST APIs</span>
-                  <span>DATA ANALYTICS</span>
-                  <span>BI</span>
-                  <span>AI / ML</span>
+                  <span>Python</span>
+                  <span>PostgresSQL</span>
+                  <span>Next.js</span>
+                  <span>AWS - S3, Glue, Athena, RDS</span>
+                  <span>FASTAPIs</span>
+                  <span>Node.js</span>
+                  <span>Pandas</span>
+                  <span>ETL modeling</span>
                 </div>
 
               </div>

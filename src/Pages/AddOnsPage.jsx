@@ -142,37 +142,12 @@ function AddOnsPage() {
                 </div>
               </article>
 
-
-              {/* =====================================================
-                  02 — DIGITAL MARKETING
+                            {/* =====================================================
+                  02 — CLAUDE CODE
               ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
                   02
-                </div>
-
-                <div className="certification-content">
-                  <h2>Digital Marketing</h2>
-
-                  <span className="certification-status">
-                    COMPLETED · GOOGLE
-                  </span>
-
-                  <p>
-                    Digital marketing fundamentals covering online
-                    marketing concepts, digital channels, and
-                    strategies for reaching and engaging audiences.
-                  </p>
-                </div>
-              </article>
-
-
-              {/* =====================================================
-                  03 — CLAUDE CODE
-              ===================================================== */}
-              <article className="certification-item">
-                <div className="certification-number">
-                  03
                 </div>
 
                 <div className="certification-content">
@@ -209,13 +184,13 @@ function AddOnsPage() {
                 </div>
               </article>
 
-
+              
               {/* =====================================================
-                  04 — AWS
+                  03 — AWS
               ===================================================== */}
               <article className="certification-item">
                 <div className="certification-number">
-                  04
+                  03
                 </div>
 
                 <div className="certification-content">
@@ -242,6 +217,33 @@ function AddOnsPage() {
 
 
               {/* =====================================================
+                  04 — DIGITAL MARKETING
+              ===================================================== */}
+              <article className="certification-item">
+                <div className="certification-number">
+                  04
+                </div>
+
+                <div className="certification-content">
+                  <h2>Digital Marketing</h2>
+
+                  <span className="certification-status">
+                    COMPLETED · GOOGLE
+                  </span>
+
+                  <p>
+                    Digital marketing fundamentals covering online
+                    marketing concepts, digital channels, and
+                    strategies for reaching and engaging audiences.
+                  </p>
+                </div>
+              </article>
+
+
+
+
+
+              {/* =====================================================
                   05 — COMPTIA A+
               ===================================================== */}
               <article className="certification-item">
@@ -261,30 +263,6 @@ function AddOnsPage() {
                     certification to strengthen foundational
                     IT support, hardware, software, and
                     troubleshooting knowledge.
-                  </p>
-                </div>
-              </article>
-
-
-              {/* =====================================================
-                  06 — APPLE
-              ===================================================== */}
-              <article className="certification-item">
-                <div className="certification-number">
-                  06
-                </div>
-
-                <div className="certification-content">
-                  <h2>Apple Certified IT Professional</h2>
-
-                  <span className="certification-status">
-                    CURRENTLY DOING · APPLE · ACIT
-                  </span>
-
-                  <p>
-                    Currently completing Apple’s IT professional
-                    certification focused on technical support,
-                    troubleshooting, and Apple technology.
                   </p>
                 </div>
               </article>

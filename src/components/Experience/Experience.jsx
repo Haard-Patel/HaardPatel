@@ -1,11 +1,75 @@
 import "./Experience.css";
 
 const experiences = [
+
   {
     number: "01",
+    title: "Data Analyst Intern",
+    company: (
+      <>
+        CodeAlpha -{" "}
+        <a
+          href="https://github.com/Haard-Patel/CodeAlpha_DataAnalytics"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>GitHub Repo</span>
+        </a>
+      </>
+    ),
+    location: "Remote",
+    duration: "October 2026- November 2026",
+
+    metrics: [
+      {
+        value: "4",
+        label: "Analytics Projects Completed on Amazon Fine Food Reviews Dataset",
+      },
+      {
+        value: "568K+",
+        label: "Customer Review Data Points Analyzed",
+      },
+      {
+        value: "5",
+        label: "Analytical and visualization tools used",
+      },
+    ],
+
+    points: [
+      {
+        number: "01",
+        title: "Explortory data analysis (EDA)",
+        description:
+          "Performed EDA on large datasets of 568K+ customer reviews to examine datasets, qualitatively and quantitatively analyze data, rating distributions, review lenght nd helpfulness ptterns.",
+      },
+      {
+        number: "02",
+        title: "Data cleaning & preprocessing",
+        description:
+          "Cleaned and transformed raw review data by converting data types, parsing test and timestmps and helpfulness metrics, identifying invalid records removing duplictes, spliting spaces and creting analysis ready parse_reviews.",
+      },
+      {
+        number: "03",
+        title: "Data visualization",
+        description:
+          "Used python, matplotlib and pandas to communicate rating distributions, review acitivity , review length into visualizations.",
+      },
+      {
+        number: "04",
+        title: "NLP Sentiment analysis",
+        description:
+          "Performed VADER sentiment analysis on customer reviews using NLP techniques to classify reviews as positive, negative, or neutral and identify key themes and trends in customer feedback.",
+      },
+    ],
+  },
+
+  {
+    number: "02",
     title: "Theatre Manager",
     company: "Cineplex",
     location: "Regina, SK",
+    duration: "December 2024",
+    
 
     metrics: [
       {
@@ -51,10 +115,11 @@ const experiences = [
   },
 
   {
-    number: "02",
+    number: "03",
     title: "Software Development Mentor",
     company: "University of Saskatchewan",
     location: "Saskatoon, SK",
+    duration: "May 2024 - December 2024",
 
     metrics: [
       {
@@ -100,10 +165,11 @@ const experiences = [
   },
 
   {
-    number: "03",
+    number: "04",
     title: "Technical Support Specialist",
     company: "Prince Technology",
-    location: "Regina, SK",
+    location: "Remote, India",
+    duration: "July 2023 - August 2024",
 
     metrics: [
       {
@@ -189,6 +255,8 @@ function Experience() {
                     <span>{experience.company}</span>
                     <span>/</span>
                     <span>{experience.location}</span>
+                    <span>/</span>
+                    <span>{experience.duration}</span>
                   </div>
                 </div>
               </div>

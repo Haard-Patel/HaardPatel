@@ -51,6 +51,30 @@ const projects = [
 
   {
     number: "03",
+    year: "2026 — Present",
+    title: "ReviewLens",
+    subtitle: "Customer Review Intelligence Platform",
+    description:
+      "A customer-review intelligence platform built around the Amazon Fine Food Reviews dataset, combining exploratory analysis, data visualization, and sentiment analysis to uncover patterns in customer opinions, ratings, and review behaviour.",
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "VADER",
+      "NLP",
+      "Data Analytics",
+      "Data Visualization",
+      "Jupyter",
+    ],
+    status: "Currently building",
+    type: "Data · NLP · Analytics",
+    statusType: "building",
+    detailUrl: "/projects/reviewlens",
+    githubUrl: "https://github.com/Haard-Patel/ReviewLens",
+  },
+
+  {
+    number: "04",
     year: "2025",
     title: "NutriTracker",
     subtitle: "AI-Assisted Nutrition Platform",
@@ -73,7 +97,7 @@ const projects = [
   },
 
   {
-    number: "04",
+    number: "05",
     year: "2024",
     title: "Pet Management",
     subtitle: "System",
@@ -141,18 +165,18 @@ function Projects() {
                   </h3>
 
                   {project.detailUrl ? (
-  <Link
-    to={project.detailUrl}
-    className="project-arrow"
-    aria-label={`View ${project.title} project`}
-    onClick={() => window.scrollTo(0, 0)}
-  >
-    <ArrowUpRight
-      size={22}
-      strokeWidth={1.5}
-    />
-  </Link>
-) : (
+                    <Link
+                      to={project.detailUrl}
+                      className="project-arrow"
+                      aria-label={`View ${project.title} project`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      <ArrowUpRight
+                        size={22}
+                        strokeWidth={1.5}
+                      />
+                    </Link>
+                  ) : (
                     <div
                       className="project-arrow project-arrow-static"
                       aria-hidden="true"
