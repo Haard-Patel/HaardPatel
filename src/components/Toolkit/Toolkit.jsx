@@ -36,7 +36,7 @@ const toolkitColumns = [
     description: "Turning information into insight.",
     items: [
       "TensorFlow",
-      "VADER - Sentiment Analysis",
+      "NLP VADER - Sentiment Analysis",
       "Data Management",
       "API Integration",
       "AI Integration",
