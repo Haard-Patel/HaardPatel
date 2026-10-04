@@ -412,7 +412,7 @@ function ITServiceManagementPage() {
               </Link>
 
               <Link
-                to="/projects/nutritracker"
+                to="/projects/ReviewLens"
                 className="itsm-detail-nav-link next"
               >
                 <span className="itsm-detail-nav-label">
@@ -420,7 +420,7 @@ function ITServiceManagementPage() {
                   <ArrowRight size={14} strokeWidth={1.4} />
                 </span>
 
-                <strong>NutriTracker</strong>
+                <strong>Review Lens</strong>
               </Link>
 
             </div>

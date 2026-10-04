@@ -352,7 +352,7 @@ function NutriTrackerPage() {
             <div className="nutritracker-detail-nav">
 
               <Link
-                to="/projects/it-service-management"
+                to="/projects/ReviewLens"
                 className="nutritracker-detail-nav-link previous"
               >
                 <span className="nutritracker-detail-nav-label">
@@ -364,7 +364,7 @@ function NutriTrackerPage() {
                 </span>
 
                 <strong>
-                  IT Service Management
+                  Review Lens
                 </strong>
               </Link>
 

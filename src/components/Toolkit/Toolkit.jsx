@@ -24,10 +24,10 @@ const toolkitColumns = [
       "Node.js",
       "Express.js",
       "Flask",
+      "FAST APIs",
       "REST APIs",
       "JWT",
       "UI/UX",
-      "Service Side Rendering"
     ],
   },
   {
@@ -36,7 +36,7 @@ const toolkitColumns = [
     description: "Turning information into insight.",
     items: [
       "TensorFlow",
-      "Data Analytics",
+      "VADER - Sentiment Analysis",
       "Data Management",
       "API Integration",
       "AI Integration",
@@ -60,6 +60,7 @@ const toolkitColumns = [
       "Jira",
       "Agile / Scrum",
       "PowerShell",
+      "Numpy - Matplotlib"
         ],
   },
 ];
