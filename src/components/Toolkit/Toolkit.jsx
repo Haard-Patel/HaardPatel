@@ -11,8 +11,8 @@ const toolkitColumns = [
       "JavaScript",
       "C++",
       "SQL",
-      "HTML / CSS",
-      "Scala",
+      "HTML",
+      "Tailwind CSS",
     ],
   },
   {
@@ -36,11 +36,12 @@ const toolkitColumns = [
     description: "Turning information into insight.",
     items: [
       "TensorFlow",
-      "NLP VADER - Sentiment Analysis",
-      "Data Management",
+      "VADER - Sentiment Analysis",
+      "NLP",
       "API Integration",
       "AI Integration",
-      "Data Visualization",
+"Matplotlib",
+"Numpy",
       "PostgreSQL",
       "MongoDB/Mongoose - Atlas and Compass",
       "Pandas",
@@ -60,7 +61,6 @@ const toolkitColumns = [
       "Jira",
       "Agile / Scrum",
       "PowerShell",
-      "Numpy - Matplotlib"
         ],
   },
 ];
