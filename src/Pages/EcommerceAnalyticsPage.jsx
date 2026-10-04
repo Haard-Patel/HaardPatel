@@ -41,9 +41,9 @@ function EcommerceAnalyticsPage() {
         <section className="project-detail-hero">
           <div className="project-detail-container">
 
-            <div className="project-detail-meta">
+          <div className="itsm-detail-meta">
               <span>01 / PROJECT</span>
-              <span>2026 — PRESENT</span>
+              <span>2026</span>
             </div>
 
             <div className="project-detail-title-area">

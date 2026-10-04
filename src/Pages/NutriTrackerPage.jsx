@@ -96,7 +96,7 @@ function NutriTrackerPage() {
           <div className="nutritracker-detail-container">
 
             <div className="nutritracker-detail-meta">
-              <span>03 / PROJECT</span>
+              <span>04 / PROJECT</span>
               <span>2025</span>
             </div>
 
